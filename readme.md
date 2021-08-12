@@ -3,10 +3,11 @@
 This repo summarizes my several attempts at packaging
 android applications as nix flakes:
 
-- [sphinx-style](): replicating the androsphinx nix flake,
-  that uses a fork of [gradle2nix]()
-- [statsim-style](): replicating the [nix workflow at status-im]()
-- [tadfisher-style](): replicating [this gist]() by tadfisher
+- [sphinx-style](./sphinx-style): replicating the
+  androsphinx nix flake, that uses a fork of
+  [gradle2nix](https://github.com/tadfisher/gradle2nix)
+- [statsim-style](./statusim-style): replicating the [nix workflow at status-im](https://github.com/status-im/status-react/tree/develop/nix#readme)
+- [tadfisher-style](): replicating [this gist](https://gist.github.com/tadfisher/17000caf8653019a9a98fd9b9b921d93) by tadfisher
 
 All attempts were unsuccessful with semi-complex
 application configurations that use any of the following:
@@ -17,7 +18,7 @@ application configurations that use any of the following:
  - custom maven repositories (tend to lack a
    `maven-metadata.xml`)
 
-### Conversations.im specific gripes
+### Conversations.im specific nits
 
 The Conversations application vendors in `libwebrtc` because
 it is not provided as a consumable library via a maven
