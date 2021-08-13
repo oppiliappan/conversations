@@ -7,7 +7,7 @@ android applications as nix flakes:
   androsphinx nix flake, that uses a fork of
   [gradle2nix](https://github.com/tadfisher/gradle2nix)
 - [statsim-style](./statusim-style): replicating the [nix workflow at status-im](https://github.com/status-im/status-react/tree/develop/nix#readme)
-- [tadfisher-style](): replicating [this gist](https://gist.github.com/tadfisher/17000caf8653019a9a98fd9b9b921d93) by tadfisher
+- [tadfisher-style](./tadfisher-style): replicating [this gist](https://gist.github.com/tadfisher/17000caf8653019a9a98fd9b9b921d93) by tadfisher
 
 All attempts were unsuccessful with semi-complex
 application configurations that use any of the following:
