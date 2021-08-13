@@ -58,4 +58,8 @@ now allow you to build the application with:
   "artifacts". Additionally, `gradle` gives projects the
   ability to modify this resolution process (resolution
   strategies, dependency substitution, module replacement),
-  making it pretty complex to replicate in nix.
+  making it pretty complex to replicate in nix
+- there exists a `androidenv.buildApp` in nixpkgs, this
+  works only for ANT based android projects. The utility to
+  convert gradle projects to ANT android projects has been
+  deprecated by google
