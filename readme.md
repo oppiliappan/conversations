@@ -46,3 +46,16 @@ now allow you to build the application with:
 ```
 ./gradlew assembleConversationsFreeSystemDebug
 ```
+
+### General notes
+
+- all project sources are loaded from local directories, a
+  local copy of `build.gradle` is required to run any form
+  of gradle locking + SHA calculation
+- gradle v7 has an internal lock mechanism but unlike
+  tools like `cargo` or `yarn`, lock files aren't as useful
+  because `gradle` further resolves these dependencies into
+  "artifacts". Additionally, `gradle` gives projects the
+  ability to modify this resolution process (resolution
+  strategies, dependency substitution, module replacement),
+  making it pretty complex to replicate in nix.

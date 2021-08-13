@@ -53,4 +53,7 @@ A problem occurred configuring root project 'Conversations'.
 My speculation is that the `updateLocks` app does not
 correctly register `buildScript` dependencies. (However,
 `deps.json` has a line with this entry, this is the only
-dependency that is never "available for offline mode"?)
+dependency that is never "available for offline mode"?). The
+gist also makes use of a `gradle lock` task which I couldn't
+find much about but seemingly has no effect on the
+`updateLocks` script.
